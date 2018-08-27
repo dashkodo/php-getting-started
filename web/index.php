@@ -1,5 +1,5 @@
 <?php
-  $data_string= print_r($_REQUEST, true)
+  $data_string= print_r($_REQUEST, true);
   $ch = curl_init('https://hooks.slack.com/services/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');
   curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
   curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
